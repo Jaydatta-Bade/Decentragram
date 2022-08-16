@@ -67,7 +67,7 @@ class App extends Component {
       const m = true
     if(m) {
       // const decentragram = new web3.eth.Contract(Decentragram.abi, networkData.address)
-      const decentragram = new web3.eth.Contract(Decentragram.abi, '0x65187cb9ff7b29a8FE6Dd7ee20EFEd23ddDE1FF4')
+      const decentragram = new web3.eth.Contract(Decentragram.abi, '0x2E0C4D0468Fc9516DEAad8436F86960E8eCC3aa1')
       this.setState({ decentragram })
       const imagesCount = await decentragram.methods.imageCount().call()
       this.setState({ imagesCount })
